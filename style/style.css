@@ -78,7 +78,47 @@ nav a{
    margin-top: 20px;
 }
 
+/* main section */
+main{
+   
+   margin: 0 auto;
+   border: 1px solid red;
+}
+/* teams section */ 
+.teams-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 30px;
+}
 
+.teams-img{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1.5rem;
+}
+
+.teams-content{
+   padding-left: 70px;
+   padding-right: 70px;
+}
+
+.terms-title{
+   font-size: 2.8rem;
+}
+.q-list{
+   color: #727272;
+   font-weight: 500;
+}
+
+.org-clr{
+   color: #FF900E;
+}
+
+.terms-description{
+   color: #727272;
+   font-weight: 400;
+}
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {

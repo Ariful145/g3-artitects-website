@@ -61,7 +61,7 @@ nav a{
 .banner-content{
    margin: 0 auto;
    text-align: center;
-   margin: 5px solid red;
+   
 }
 .banner-title{
    color: #131313;
@@ -85,7 +85,7 @@ nav a{
 main{
    max-width: 1240px;
    margin: 0 auto;
-   border: 1px solid red;
+ 
 }
 /* teams section */ 
 .teams-container{
@@ -124,26 +124,56 @@ main{
    color: #FF900E;
 }
 
-.terms-description{
+.terms-description ,
+.card-title{
    color: #727272;
    font-weight: 400;
 }
+
+/* some facts section */
+.facts-card-container{
+   display: flex;
+   justify-content: space-around;
+}
+
+.facts-card-container .card{
+   border-radius: 8px;
+   border: 1px solid #FF900E;
+   text-align: center;
+   padding: 30px;
+}
+
+.facts-card-container .card-tittle{
+   font-weight: 600;
+   margin-top: 5px;
+}
+
+.facts-card-container .card-stats{
+   font-size: 2rem;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
    header{
       padding: 20px;
    }
-   nav , .teams-container{
+   nav , .teams-container,.facts-card-container{
       flex-direction: column;
    }
    .teams-img{
       grid-template-columns: 1fr;
       margin: 0;
    }
-   .teams-content{
+   .teams-content,.facts-card-container{
       padding-left: 20px;
       padding-right: 20px;
+   }
+   .facts-card-container{
+      gap: 20px;
    }
 }
 /* tablet or medium devices */
